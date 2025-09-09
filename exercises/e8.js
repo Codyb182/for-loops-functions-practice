@@ -7,7 +7,8 @@
 export function getClientWithGreatestBalance(array) {
   let maxAccount = null;
   for (let i = 1; i < array.length; i++) {
-    if (array[i].balance > 0 && (maxAccount === null || array[i].balance > maxAccount.balance)) {
+    if (array[i].balance > 0 && (maxAccount === null 
+      || array[i].balance > maxAccount.balance)) {
         maxAccount = array[i];
     }
   }
