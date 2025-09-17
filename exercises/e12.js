@@ -9,7 +9,7 @@ import { bankAccounts } from "../data/data";
 export function getAllDepositsGreaterThanOneHundred(array) {
   let getAllDepositsGreaterThanOneHundred = [];
   for (let i = 0; i < array.length; i++) {
-    if (Array.isArray(array[i].deposits)) {
+    if (bankAccounts[i].deposits) {
       for (let j = 0; j < array[i].deposits.length; j++)
         if (array[i].deposits[j] > 100) {
           getAllDepositsGreaterThanOneHundred.push(array[i].deposits[j]);
